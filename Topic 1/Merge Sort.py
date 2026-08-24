@@ -21,4 +21,7 @@ def mergesort(arr):
 arr=list(map(int,input("Enter array elements:").split()))
 mergesort(arr)
 print("Sorted array:",arr)
-        
+#--------------OUTPUT-------------#
+Enter array elements: 38 27 43 3 9 82 10
+Sorted array: [3, 9, 10, 27, 38, 43, 82]
+Time Complexity: O(n log n)
