@@ -31,3 +31,18 @@ for i in range(n - 1):
 print("Sorted Alerts:", optimized)
 print("Plain Comparisons:", plain_comparisons)
 print("Optimized Comparisons:", optimized_comparisons)
+#-----------OUTPUT------------#
+Enter number of alerts: 10
+Enter severity of alert 1: 2 
+Enter severity of alert 2: 5
+Enter severity of alert 3: 1
+Enter severity of alert 4: 4
+Enter severity of alert 5: 7
+Enter severity of alert 6: 6
+Enter severity of alert 7: 1
+Enter severity of alert 8: 2
+Enter severity of alert 9: 8
+Enter severity of alert 10: 6
+Sorted Alerts: [1, 1, 2, 2, 4, 5, 6, 6, 7, 8]
+Plain Comparisons: 45
+Optimized Comparisons: 39
