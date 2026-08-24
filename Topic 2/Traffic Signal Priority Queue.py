@@ -16,3 +16,11 @@ for i in range(n - 1):
             queue[j], queue[j + 1] = queue[j + 1], queue[j]
 
 print("Updated priority queue:", queue)
+#----------output-----------#
+Enter number of vehicles in queue: 3
+Enter vehicle 1 (ambulance/bus/car): car
+Enter vehicle 2 (ambulance/bus/car): car
+Enter vehicle 3 (ambulance/bus/car): bus
+Enter new vehicle arriving: ambulance
+Updated priority queue: ['ambulance', 'bus', 'car', 'car']
+Time Complexity: O(n^2)
