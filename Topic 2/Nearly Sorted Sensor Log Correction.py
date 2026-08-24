@@ -20,3 +20,13 @@ for i in range(1, n):
 
 print("Sorted Log:", log)
 print("Total Shifts:", shifts)
+#-----------OUTPUT----------#
+Enter number of temperature readings: 6
+Enter reading 1: 18.5
+Enter reading 2: 18.9
+Enter reading 3: 17.9
+Enter reading 4: 19.2
+Enter reading 5: 19.5
+Enter reading 6: 18.5
+Sorted Log: [17.9, 18.5, 18.5, 18.9, 19.2, 19.5]
+Total Shifts: 5
