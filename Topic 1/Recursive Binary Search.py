@@ -20,6 +20,8 @@ if result != -1:
     print("Key found at index", result)
 else:
     print("Key not found")
-        
-            
+    #------------OUTPUT--------------#
+Enter sorted array elements: 5 10 15 20 25
+Enter key: 20
+Key found at index 3
         
