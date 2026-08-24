@@ -48,3 +48,7 @@ temp = [0] * len(arr)
 count = merge_sort(arr, temp, 0, len(arr) - 1)
 
 print("Number of inversions:", count)
+
+#-------------OUTPUT-------------#
+Enter array elements: 2 4 1 3 5
+Number of inversions: 3
