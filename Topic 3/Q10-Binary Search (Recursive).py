@@ -32,3 +32,9 @@ print("\nBest Case Complexity : O(1)")
 print("Average Case Complexity : O(n)")
 print("Worst Case Complexity : O(n)")
 print("Space Complexity : O(1)")
+
+#---------------OUTPUT-------------#
+Key found at index 3
+Best Case: O(1)
+Worst Case: O(log n)
+Average Case: O(log n)
