@@ -32,3 +32,7 @@ def max_subarray(arr, low, high):
 arr = list(map(int, input("Enter array elements: ").split()))
 
 print("Maximum Subarray Sum:", max_subarray(arr, 0, len(arr) - 1))
+
+#---------OUTPUT--------#
+Enter array elements: -2 -3 4 -1 -2 1 5 -3
+Maximum Subarray Sum: 7
