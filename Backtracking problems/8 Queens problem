@@ -46,3 +46,39 @@ print("\nLast solution:")
 solution = solutions[n]
 for row in solution:
     print(" ".join("Q" if col == row else "." for col in range(n)))
+
+# output #
+Number of solutions: 92
+
+First solution:
+Q . . . . . . .
+. . . . Q . . .
+. . . . . . . Q
+. . . . . Q . .
+. . Q . . . . .
+. . . . . . Q .
+. Q . . . . . .
+. . . Q . . . .
+
+Second solution:
+Q . . . . . . .
+. . . . . Q . .
+. . . . . . . Q
+. . Q . . . . .
+. . . . . . Q .
+. . . Q . . . .
+. Q . . . . . .
+. . . . Q . . .
+
+Last solution:
+. Q . . . . . .
+. . . . . Q . .
+. . . . . . . Q
+. . Q . . . . .
+Q . . . . . . .
+. . . Q . . . .
+. . . . . . Q .
+. . . . Q . . .
+
+
+
