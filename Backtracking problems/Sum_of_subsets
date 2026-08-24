@@ -22,3 +22,11 @@ subsets = sum_of_subsets(arr, target)
 print("Subsets with sum", target, ":")
 for subset in subsets:
     print(subset)
+
+# output #
+Enter elements: 10 7 18 5 20 13
+Enter target sum: 30
+Subsets with sum 30 :
+[10, 7, 13]
+[10, 20]
+[7, 18, 5]
