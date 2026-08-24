@@ -22,3 +22,11 @@ for i in range(n):
 
 print("Closest Pair:", pair[0], pair[1])
 print("Distance:", min_dist)
+#------------OUTPUT-------------#
+Enter number of points: 4
+1 2
+4 5
+7 8
+3 1
+Closest Pair: (1, 2) (3, 1)
+Distance: 2.23606797749979
