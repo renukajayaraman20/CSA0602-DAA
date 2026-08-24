@@ -17,3 +17,12 @@ for i in range(n - 1):
 
 print("Sorted roll numbers:", rolls)
 print("Number of passes taken:", passes)
+#-----------OUTPUT------------#
+Enter number of recently viewed items: 5
+Enter price of item 1: 101
+Enter price of item 2: 458
+Enter price of item 3: 621
+Enter price of item 4: 154
+Enter price of item 5: 952
+Sorted prices: [101, 154, 458, 621, 952]
+Time taken: 27.70 microseconds
