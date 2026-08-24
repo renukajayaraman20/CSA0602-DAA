@@ -14,3 +14,7 @@ x = int(input("Enter base: "))
 n = int(input("Enter exponent: "))
 
 print("Power:", power(x, n))
+#-------------OUTPUT-------------#
+Enter base: 2
+Enter exponent: 10
+Power: 1024
