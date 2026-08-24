@@ -16,3 +16,9 @@ fibonacci_iterative(n)
 print("Recursive Fibonacci Series:")
 for i in range(n):
     print(fibonacci_recursive(i), end=" ")
+#-------------OUTPUT--------#
+Enter the number of terms: 10
+Iterative Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34 
+Recursive Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34 
