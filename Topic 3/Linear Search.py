@@ -16,3 +16,9 @@ for i in range(n):
         break
 else:
     print("Element not found")
+
+#----------OUTPUT-----------#
+Key found at index 2
+Best Case: O(1)
+Worst Case: O(n)
+Average Case: O(n)
