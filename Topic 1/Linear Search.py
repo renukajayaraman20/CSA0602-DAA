@@ -12,3 +12,16 @@ for i in range(len(arr)):
         break
 if not found:
     print("Key not found")
+#------------OUTPUT----------#
+Enter the no. of elements in the array: 5
+Enter the array elements:
+10
+25
+30
+45
+50
+Enter the key to search: 30
+Key found at index: 2
+Best Case Time Complexity: O(1)
+Average Case Time Complexity: O(n)
+Worst Case Time Complexity: O(n)
