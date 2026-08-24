@@ -19,3 +19,11 @@ for i in range(n - 1):
 print("Sorted readings:", a)
 print("Total swaps performed:", swaps)
 print("Maximum possible swaps (n-1):", n - 1)
+#-------------OUTPUT------#
+Enter number of temperature readings: 3
+Enter reading 1: 23.5
+Enter reading 2: 19.2
+Enter reading 3: 25.1
+Sorted readings: [19.2, 23.5, 25.1]
+Total swaps performed: 1
+Maximum possible swaps (n-1): 2
