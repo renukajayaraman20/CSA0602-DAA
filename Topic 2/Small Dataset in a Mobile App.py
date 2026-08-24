@@ -20,3 +20,14 @@ end = time.perf_counter()
 
 print("Sorted prices:", prices)
 print(f"Time taken: {(end - start) * 1_000_000:.2f} microseconds")
+#-----------OUTPUT-----------#
+Enter price of item 1: 499
+Enter price of item 2: 129
+Enter price of item 3: 456
+Enter price of item 4: 789
+Enter price of item 5: 452
+Enter price of item 6: 156
+Enter price of item 7: 123
+Enter price of item 8: 412
+Sorted prices: [123, 129, 156, 412, 452, 456, 499, 789]
+Time taken: 47.40 microseconds
