@@ -9,35 +9,23 @@ def hamiltonian_cycle(graph):
         # Check if connected to previous vertex
         if graph[path[position - 1]][vertex] == 0:
             return False
-
         # Check if already included
         if vertex in path:
             return False
-
         return True
-
     def backtrack(position):
         if position == n:
             return graph[path[position - 1]][path[0]] == 1
-
         for vertex in range(1, n):
             if is_safe(vertex, position):
                 path[position] = vertex
-
                 if backtrack(position + 1):
                     return True
-
                 path[position] = -1
-
         return False
-
     if backtrack(1):
         return path + [path[0]]
-
     return None
-
-
-# Input
 n = int(input("Enter number of vertices: "))
 
 print("Enter adjacency matrix:")
@@ -45,8 +33,6 @@ graph = []
 
 for i in range(n):
     graph.append(list(map(int, input().split())))
-
-# Output
 cycle = hamiltonian_cycle(graph)
 
 if cycle:
@@ -54,3 +40,14 @@ if cycle:
     print(" -> ".join(str(vertex + 1) for vertex in cycle))
 else:
     print("No Hamiltonian Cycle exists.")
+
+# output #
+Enter number of vertices: 5
+Enter adjacency matrix:
+0 1 0 1 0
+1 0 1 1 1
+0 1 0 0 1
+1 1 0 0 1
+0 1 1 1 0
+Hamiltonian Cycle:
+1 -> 2 -> 3 -> 5 -> 4 -> 1
