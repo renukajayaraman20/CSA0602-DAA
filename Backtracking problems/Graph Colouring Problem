@@ -1,0 +1,52 @@
+# Graph Colouring Problem  #
+def graph_coloring(graph, colors):
+    n = len(graph)
+    color = [0] * n
+
+    def is_safe(vertex, c):
+        for i in range(n):
+            if graph[vertex][i] == 1 and color[i] == c:
+                return False
+        return True
+
+    def backtrack(vertex):
+        if vertex == n:
+            return True
+
+        for c in range(1, colors + 1):
+            if is_safe(vertex, c):
+                color[vertex] = c
+
+                if backtrack(vertex + 1):
+                    return True
+
+                color[vertex] = 0
+
+        return False
+
+    if backtrack(0):
+        return color
+
+    return None
+
+
+# Input
+n = int(input("Enter number of vertices: "))
+
+print("Enter adjacency matrix:")
+graph = []
+
+for i in range(n):
+    graph.append(list(map(int, input().split())))
+
+m = int(input("Enter number of colors: "))
+
+# Output
+solution = graph_coloring(graph, m)
+
+if solution:
+    print("Graph coloring:")
+    for i in range(n):
+        print("Vertex", i + 1, "-> Color", solution[i])
+else:
+    print("No valid coloring possible.")

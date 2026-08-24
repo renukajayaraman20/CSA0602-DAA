@@ -1,0 +1,24 @@
+#SUM OF SUBSETS USING BACKTRACKING#
+
+def sum_of_subsets(arr, target):
+    result = []
+    def backtrack(index, current, total):
+        if total == target:
+            result.append(current.copy())
+            return
+        if index == len(arr) or total > target:
+            return
+        # Include current element
+        current.append(arr[index])
+        backtrack(index + 1, current, total + arr[index])
+        current.pop()
+        # Exclude current element
+        backtrack(index + 1, current, total)
+    backtrack(0, [], 0)
+    return result
+arr = list(map(int, input("Enter elements: ").split()))
+target = int(input("Enter target sum: "))
+subsets = sum_of_subsets(arr, target)
+print("Subsets with sum", target, ":")
+for subset in subsets:
+    print(subset)
