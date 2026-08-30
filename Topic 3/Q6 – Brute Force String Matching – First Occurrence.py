@@ -23,3 +23,8 @@ for i in range(len(text) - len(pattern) + 1):
 else:
     print("Pattern not found")
     print("Number of comparisons =", comparisons)
+#-OUTPUT----#
+Enter text: COMPUTERSCIENCE
+Enter pattern: SCI
+First occurrence position = 8
+Number of comparisons = 11
