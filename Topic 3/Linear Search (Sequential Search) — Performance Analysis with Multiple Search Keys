@@ -34,7 +34,19 @@ print("Worst Case Complexity : O(n)")
 print("Space Complexity : O(1)")
 
 #---------------OUTPUT-------------#
-Key found at index 3
-Best Case: O(1)
-Worst Case: O(log n)
-Average Case: O(log n)
+Enter number of elements: 5
+Enter element 1: 8
+Enter element 2: 9
+Enter element 3: 4
+Enter element 4: 10
+Enter element 5: 45
+Enter number of search keys: 2
+Enter search key: 10
+Comparisons:
+8 == 10
+9 == 10
+4 == 10
+10 == 10
+Element found at position 4
+Total Comparisons = 4
+Enter search key: 
