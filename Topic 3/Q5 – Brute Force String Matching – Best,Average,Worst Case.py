@@ -24,3 +24,8 @@ elif found:
     print("Average Case")
 else:
     print("Worst Case")
+#-----OUTPUT-------#
+Enter text: AAAAAAAAAB
+Enter pattern: AAAAB
+Number of comparisons = 30
+Average Case
