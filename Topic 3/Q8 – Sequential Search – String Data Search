@@ -12,3 +12,11 @@ for i in range(n):
         break
 else:
     print("Name not found")
+#-------------OUTPUT----------#
+Enter number of names: 4
+Enter name 1: RENUKA
+Enter name 2: VIXKY
+Enter name 3: REENA
+Enter name 4: SID
+Enter name to search: SID
+Name found at position 4
