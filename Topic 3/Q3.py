@@ -12,3 +12,12 @@ for i in range(n):
         break
 else:
     print("Element not found")
+#----------OUTPUT----------#
+Enter number of elements: 5
+Enter element 1: 45
+Enter element 2: 7
+Enter element 3: 9
+Enter element 4: 5
+Enter element 5: 1
+Enter key: 1
+First occurrence at position 5
