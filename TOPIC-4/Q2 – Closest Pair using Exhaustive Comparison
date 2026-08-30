@@ -1,0 +1,26 @@
+import math
+
+n = int(input("Enter number of points: "))
+
+points = []
+for i in range(n):
+    x = float(input("Enter x coordinate: "))
+    y = float(input("Enter y coordinate: "))
+    points.append((x, y))
+
+minimum = float('inf')
+pair = None
+
+for i in range(n):
+    for j in range(i + 1, n):
+        d = math.sqrt(
+            (points[i][0] - points[j][0])**2 +
+            (points[i][1] - points[j][1])**2
+        )
+
+        if d < minimum:
+            minimum = d
+            pair = (points[i], points[j])
+
+print("Closest pair:", pair[0], "-", pair[1])
+print("Minimum distance:", minimum)
