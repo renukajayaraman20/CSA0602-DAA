@@ -19,7 +19,12 @@ def brute_force(text, pattern):
             return comparisons
 
     return comparisons
-
+#OUTPUT#
+Enter text: PROGRAMMINGLAB
+Enter successful search pattern: LAB
+Enter unsuccessful search pattern: TEST
+Successful search comparisons = 14
+Unsuccessful search comparisons = 11
 
 c1 = brute_force(text, pattern1)
 c2 = brute_force(text, pattern2)
