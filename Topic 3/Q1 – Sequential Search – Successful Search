@@ -20,3 +20,13 @@ if not found:
     print("Element not found")
 
 print("Number of comparisons =", comparisons)
+#-------------output------------#
+Enter number of elements: 5
+Enter element 1: 51
+Enter element 2: 48
+Enter element 3: 87
+Enter element 4: 94
+Enter element 5: 65
+Enter key to search: 87
+Element found at position 3
+Number of comparisons = 3
