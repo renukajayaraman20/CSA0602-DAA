@@ -21,3 +21,14 @@ else:
     print("Element found at position", i + 1)
 
 print("Comparison count =", comparisons + 1)
+#-----------OUTPUT----------------#
+Enter number of elements: 5
+Enter element 1: 78
+Enter element 2: 74
+Enter element 3: 54
+Enter element 4: 98
+Enter element 5: 74
+Enter key: 45
+Total Comparisons = 5
+Total Matches = 0
+Total Mismatches = 5
