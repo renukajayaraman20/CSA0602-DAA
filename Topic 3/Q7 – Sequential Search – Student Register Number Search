@@ -12,3 +12,11 @@ for i in range(n):
         break
 else:
     print("Register Number not found")
+#------------------OUTPUT-------------#
+Enter number of register numbers: 4
+Enter register number 1: 789
+Enter register number 2: 945
+Enter register number 3: 952
+Enter register number 4: 364
+Enter register number to search: 952
+Register Number found at position 3
