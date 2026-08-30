@@ -21,3 +21,17 @@ for i in range(len(text) - len(pattern) + 1):
         print("Alignment", alignment, ": Mismatch")
 
     alignment += 1
+#OUTPUT#
+nter text: ABCDABCABCDA
+Enter pattern: ABCD
+Alignment 1 : Match
+Pattern occurrence position = 0
+Alignment 2 : Mismatch
+Alignment 3 : Mismatch
+Alignment 4 : Mismatch
+Alignment 5 : Mismatch
+Alignment 6 : Mismatch
+Alignment 7 : Mismatch
+Alignment 8 : Match
+Pattern occurrence position = 7
+Alignment 9 : Mismatch
