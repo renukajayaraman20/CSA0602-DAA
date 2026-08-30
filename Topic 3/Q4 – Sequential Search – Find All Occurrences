@@ -17,3 +17,14 @@ for i in range(n):
 
 print()
 print("Total occurrences =", count)
+#------------OUTPUT-------------#
+Enter number of elements: 5
+Enter element 1: 8
+Enter element 2: 7
+Enter element 3: 7
+Enter element 4: 8
+Enter element 5: 8
+Enter key: 7
+Occurrences at positions:
+2 3 
+Total occurrences = 2
