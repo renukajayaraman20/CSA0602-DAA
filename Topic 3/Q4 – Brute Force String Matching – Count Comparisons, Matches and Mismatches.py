@@ -19,3 +19,9 @@ for i in range(len(text) - len(pattern) + 1):
 print("Total character comparisons =", comparisons)
 print("Total matches =", matches)
 print("Total mismatches =", mismatches)
+#-----------OUTPUT-----------#
+Enter text: ABABABABAB
+Enter pattern: ABAB
+Total character comparisons = 19
+Total matches = 16
+Total mismatches = 3
