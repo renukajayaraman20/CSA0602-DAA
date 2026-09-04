@@ -1,0 +1,13 @@
+import math
+
+def closest_pair_of_points(points):
+    best=(None,float('inf'))
+    for i in range(len(points)):
+        for j in range(i+1,len(points)):
+            d=math.dist(points[i],points[j])
+            if d<best[1]:
+                best=( (points[i],points[j]), d)
+    return best
+
+pts=[(2,3),(12,30),(40,50),(5,1),(12,10),(3,4)]
+print(closest_pair_of_points(pts))

@@ -1,0 +1,8 @@
+def detect_potential_collision(points,threshold):
+    pair,d=closest_pair_of_points(points)
+    if d<=threshold:
+        return pair,d
+    return None,d
+
+sprites=[(0,0),(1,1),(50,50),(100,100),(1.2,0.9)]
+print(detect_potential_collision(sprites,2.0))

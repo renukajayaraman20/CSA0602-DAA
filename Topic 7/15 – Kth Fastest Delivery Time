@@ -1,0 +1,7 @@
+def kth_smallest_delivery_time(times,k):
+    return median_of_medians_select(times,k)
+
+delivery_times=[45,30,60,25,50,40,35,55,20,65]
+
+print(kth_smallest_delivery_time(delivery_times,0))
+print(kth_smallest_delivery_time(delivery_times,4))

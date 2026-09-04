@@ -1,0 +1,7 @@
+def schoolbook(x,y):
+    return x*y
+
+for digits in [2,4,8,16,32]:
+    x=int('7'*digits)
+    y=int('3'*digits)
+    print(karatsuba(x,y),schoolbook(x,y))

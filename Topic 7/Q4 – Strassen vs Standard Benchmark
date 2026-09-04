@@ -1,0 +1,12 @@
+import random,time
+
+def random_matrix(n):
+    return [[random.randint(1,9) for _ in range(n)] for _ in range(n)]
+
+def benchmark(n):
+    A=random_matrix(n); B=random_matrix(n)
+    t=time.time(); standard_multiply(A,B); t1=time.time()-t
+    t=time.time(); strassen(A,B); t2=time.time()-t
+    return t1,t2
+
+print(benchmark(16))

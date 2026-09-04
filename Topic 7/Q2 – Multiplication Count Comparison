@@ -1,0 +1,11 @@
+def count_strassen(n):
+    k=0
+    p=1
+    while p<n: p*=2; k+=1
+    return 7**k
+
+def count_standard(n):
+    return n**3
+
+for n in [2,4,8,16,32,64]:
+    print(n,count_strassen(n),count_standard(n))

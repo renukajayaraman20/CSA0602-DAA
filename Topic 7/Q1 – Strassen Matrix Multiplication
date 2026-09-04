@@ -1,0 +1,21 @@
+def add(A,B): return [[A[i][j]+B[i][j] for j in range(len(A))] for i in range(len(A))]
+def sub(A,B): return [[A[i][j]-B[i][j] for j in range(len(A))] for i in range(len(A))]
+
+def strassen(A,B):
+    n=len(A)
+    if n==1: return [[A[0][0]*B[0][0]]]
+    m=n//2
+    a,b,c,d=[x[:m] for x in A[:m]],[x[m:] for x in A[:m]],[x[:m] for x in A[m:]],[x[m:] for x in A[m:]]
+    e,f,g,h=[x[:m] for x in B[:m]],[x[m:] for x in B[:m]],[x[:m] for x in B[m:]],[x[m:]]
+    M1=strassen(add(a,c),add(e,f))
+    M2=strassen(add(b,d),add(g,h))
+    M3=strassen(a,sub(f,h))
+    M4=strassen(d,sub(g,e))
+    M5=strassen(add(a,b),h)
+    M6=strassen(sub(c,a),add(e,f))
+    M7=strassen(sub(b,d),add(g,h))
+    C11=add(sub(add(M1,M2),M5),M4)
+    C12=add(M3,M5)
+    C21=add(M4,M6)
+    C22=add(sub(add(M1,M2),M3),M7)
+    return [C11[i]+C12[i] for i in range(m)]+[C21[i]+C22[i] for i in range(m)]

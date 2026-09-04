@@ -1,0 +1,6 @@
+def check_minimum_spacing(nodes,min_safe_distance):
+    pair,d=closest_pair_of_points(nodes)
+    return d>=min_safe_distance,pair,d
+
+nodes=[(0,0),(10,10),(10.5,10.2),(30,40),(31,41)]
+print(check_minimum_spacing(nodes,1.0))

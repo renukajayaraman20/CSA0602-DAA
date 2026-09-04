@@ -1,0 +1,20 @@
+def median_of_medians_select(a,k):
+    if len(a)<=5:
+        return sorted(a)[k]
+
+    groups=[a[i:i+5] for i in range(0,len(a),5)]
+    medians=[sorted(g)[len(g)//2] for g in groups]
+    pivot=median_of_medians_select(medians,len(medians)//2)
+
+    low=[x for x in a if x<pivot]
+    equal=[x for x in a if x==pivot]
+    high=[x for x in a if x>pivot]
+
+    if k<len(low):
+        return median_of_medians_select(low,k)
+    if k<len(low)+len(equal):
+        return pivot
+    return median_of_medians_select(high,k-len(low)-len(equal))
+
+data=[12,3,5,7,4,19,26]
+print(median_of_medians_select(data,3))

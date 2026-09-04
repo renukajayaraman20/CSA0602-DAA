@@ -1,0 +1,26 @@
+def karatsuba(x,y,trace,depth=0):
+    trace.append((depth,x,y))
+
+    if x<10 or y<10:
+        return x*y
+
+    n=max(len(str(x)),len(str(y)))
+    m=n//2
+    p=10**m
+
+    a,b=divmod(x,p)
+    c,d=divmod(y,p)
+
+    z2=karatsuba(a,c,trace,depth+1)
+    z0=karatsuba(b,d,trace,depth+1)
+    z1=karatsuba(a+b,c+d,trace,depth+1)-z2-z0
+
+    return z2*p*p+z1*p+z0
+
+trace=[]
+result=karatsuba(1234,56,trace)
+
+print("Result:",result)
+
+for item in trace:
+    print("Depth:",item[0],"X:",item[1],"Y:",item[2])

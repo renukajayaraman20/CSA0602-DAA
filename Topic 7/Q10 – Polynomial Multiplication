@@ -1,0 +1,8 @@
+def multiply_polynomials_naive(a,b):
+    r=[0]*(len(a)+len(b)-1)
+    for i,x in enumerate(a):
+        for j,y in enumerate(b):
+            r[i+j]+=x*y
+    return r
+
+print(multiply_polynomials_naive([1,2],[3,4]))
